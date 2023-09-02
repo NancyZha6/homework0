@@ -8,7 +8,7 @@
 
 <meta name="author" content="Nancy Zha">
 
-<title>Homework0</title>
+<title>hw0</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,16 +24,16 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="homework0_files/libs/clipboard/clipboard.min.js"></script>
-<script src="homework0_files/libs/quarto-html/quarto.js"></script>
-<script src="homework0_files/libs/quarto-html/popper.min.js"></script>
-<script src="homework0_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="homework0_files/libs/quarto-html/anchor.min.js"></script>
-<link href="homework0_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="homework0_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="homework0_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="homework0_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="homework0_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="hw0_files/libs/clipboard/clipboard.min.js"></script>
+<script src="hw0_files/libs/quarto-html/quarto.js"></script>
+<script src="hw0_files/libs/quarto-html/popper.min.js"></script>
+<script src="hw0_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="hw0_files/libs/quarto-html/anchor.min.js"></script>
+<link href="hw0_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="hw0_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="hw0_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="hw0_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="hw0_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -48,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework0</h1>
+<h1 class="title">hw0</h1>
 </div>
 
 
@@ -69,21 +69,22 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<ol class="example" type="1">
+<ol type="1">
 <li>Write a Quarto document that defines variables <span class="math inline">\(a=1, b=-1, c=-2\)</span> and print out the solutions to <span class="math inline">\(f(x) = ax^2+bx+c=0\)</span>. Do not report complex solutions, only real numbers.</li>
 </ol>
-<ol start="2" class="example" type="1">
+<ol start="2" type="1">
 <li>Include a graph of <span class="math inline">\(f(x)\)</span> versus <span class="math inline">\(x\)</span> for <span class="math inline">\(x \in (-5,5)\)</span>.</li>
 </ol>
 <p>This is how you make a plot of a quadratic function:</p>
-<ol start="3" class="example" type="1">
+<ol start="3" type="1">
 <li><p>Generate a PDF report using knitr. Do not show the R code, only the solutions and explanations of what the reader is seeing.</p></li>
 <li><p>Erase the PDF report and reproduce it but this time using <span class="math inline">\(a=1, b=2, c=5\)</span>.</p></li>
 </ol>
-<ol start="5" class="example" type="1">
+<ol start="5" type="1">
 <li>Erase the PDF report and reproduce it but this time using <span class="math inline">\(a=1, b=3, c=2\)</span>.</li>
 </ol>
-<p>Answer: I solved the quadratic equation by creating a function using quadratic formula <span class="math inline">\(x = \frac{-b \pm\sqrt{b^2 - 4ac}}{2a}\)</span> for the discriminant. Three conditions are considered: 1. discriminant&gt;0, 2 real roots. 2. discriminant&lt;0, no real roots. 3. discriminant=0, 2 equal roots. Plot shows parabola of <span class="math inline">\(x^2+3x+2\)</span> and the solutions are at intersection of parabola and the <span class="math inline">\(y=0\)</span> line, which are x=-1 and x=-2.</p>
+<p>Answer: I solved the quadratic equation by creating a function using quadratic formula <span class="math inline">\(x = \frac{-b \pm\sqrt{b^2 - 4ac}}{2a}\)</span> for the discriminant <span class="math inline">\(b^2 - 4ac\)</span>.</p>
+<p>Three conditions are considered: 1. discriminant&gt;0, 2 real roots. 2. discriminant&lt;0, no real roots. 3. discriminant=0, 2 equal roots. In our case, the discriminant is larger than 0 so we have two different solutions. Plot shows parabola of <span class="math inline">\(f(x) = x^2+3x+2\)</span> for <span class="math inline">\(x \in (-5,5)\)</span> and the solutions are at intersection of parabola and the <span class="math inline">\(y=0\)</span> line, which are <span class="math inline">\(x_1=-1\)</span> and <span class="math inline">\(x_2=-2\)</span>.</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "The solutions are: -1 and -2"</code></pre>
@@ -91,10 +92,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="homework0_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+<p><img src="hw0_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<ol start="6" class="example" type="1">
+<ol start="6" type="1">
 <li>Create an HTML page with the results for this last set of values, but this time showing the code.</li>
 </ol>
 
