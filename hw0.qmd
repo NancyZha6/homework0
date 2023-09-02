@@ -1,5 +1,5 @@
 ---
-title: "Homework0"
+title: "hw0"
 author: "Nancy Zha"
 format: html
 editor: visual
@@ -11,8 +11,8 @@ execute:
 library(knitr)
 ```
 
-(@) Write a Quarto document that defines variables $a=1, b=-1, c=-2$
-and print out the solutions to $f(x) = ax^2+bx+c=0$. Do not report complex solutions, only real numbers. 
+(1) Write a Quarto document that defines variables $a=1, b=-1, c=-2$ and print out the solutions to $f(x) = ax^2+bx+c=0$. Do not report complex solutions, only real numbers.
+
 ```{r}
 quadratic_fun <- function(a, b, c){
   # a*x^2 + b*x + c = 0
@@ -37,22 +37,23 @@ quadratic_fun <- function(a, b, c){
 #quadratic_fun(a = 1, b = -1, c = -2)
 ```
 
-
-(@) Include a graph of $f(x)$ versus $x$ for $x \in (-5,5)$.
+(2) Include a graph of $f(x)$ versus $x$ for $x \in (-5,5)$.
 
 This is how you make a plot of a quadratic function:
 
-(@) Generate a PDF report using knitr. Do not show the R code, only the solutions and explanations of what the reader is seeing.
+(3) Generate a PDF report using knitr. Do not show the R code, only the solutions and explanations of what the reader is seeing.
 
-(@) Erase the PDF report and reproduce it but this time using $a=1, b=2, c=5$. 
+(4) Erase the PDF report and reproduce it but this time using $a=1, b=2, c=5$.
 
 ```{r}
 #quadratic_fun(a = 1, b = 2, c = 5)
 ```
 
-(@) Erase the PDF report and reproduce it but this time using $a=1, b=3, c=2$. 
+(5) Erase the PDF report and reproduce it but this time using $a=1, b=3, c=2$.
 
-Answer: I solved the quadratic equation by creating a function using quadratic formula $x = \frac{-b \pm\sqrt{b^2 - 4ac}}{2a}$ for the discriminant. Three conditions are considered: 1. discriminant>0, 2 real roots. 2. discriminant<0, no real roots. 3. discriminant=0, 2 equal roots. Plot shows parabola of $x^2+3x+2$ and the solutions are at intersection of parabola and the $y=0$ line, which are x=-1 and x=-2.
+Answer: I solved the quadratic equation by creating a function using quadratic formula $x = \frac{-b \pm\sqrt{b^2 - 4ac}}{2a}$ for the discriminant $b^2 - 4ac$. 
+
+Three conditions are considered: 1. discriminant\>0, 2 real roots. 2. discriminant\<0, no real roots. 3. discriminant=0, 2 equal roots. In our case, the discriminant is larger than 0 so we have two different solutions. Plot shows parabola of $f(x) = x^2+3x+2$ for $x \in (-5,5)$ and the solutions are at intersection of parabola and the $y=0$ line, which are $x_1=-1$ and $x_2=-2$.
 
 ```{r}
 quadratic_fun(a = 1, b = 3, c = 2)
@@ -63,9 +64,12 @@ a <- 1
 b <- 3
 c <- 2
 x <- seq(-5, 5, length = 200)
-plot(x, a*x^2 + b*x + c, type = "l")
+plot(x, a*x^2 + b*x + c, type = "l", ylab = "f(x)")
+abline(v = -1)
+text(x = -1, y = 2, "x1")
+abline(v = -2)
+text(x = -2, y = 2, "x2")
 abline(h = 0, lty = 2)
 ```
-(@) Create an HTML page with the results for this last set of values, but this time showing the code. 
 
-
+(6) Create an HTML page with the results for this last set of values, but this time showing the code.
